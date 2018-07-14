@@ -1,39 +1,96 @@
-<!doctype html>
-<head> 
-<meta charset="utf-8" />
-<title> Câu lạc bộ ESC PTIT</title>
-<style>
-	p {
-		padding: 40px;
-		font-size: 20px;
-		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
-		font-weight: bold;
-	}
-	.header {
-		background-color: antiquewhite;
-		margin-top: -15px;
-	}
-	main {
-		text-align: center;
-	}
-	img {
-	width: 100px;
-    float: left;
-	}
-	</style>
+<!doctype html><head>
+<meta charset="utf-8"/>
+<title>Câu lạc bộ ESC PTIT </title>
+<link rel="shortcut icon" href="img/thumbnail.ico"/>
+<meta name="Keywords" content="ESC PTIT, Câu lạc bộ ESC PTIT, eSports PTIT, PTIT, Thể thao điện tử Sinh viên " />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Nguyễn Quốc Hùng" />
+<meta name="Description" content="Website Câu lạc bộ Thể thao điện tử ESC PTIT">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta property="og:image" content="https://www.w3schools.com/images/w3schools_logo.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="200">
+<meta property="og:image:height" content="200">
+
+<script>
+//	alert('Chào mừng đến với Câu lạc bộ Thể thao điện tử ESC PTIT ');
+function notBack(){
+    alert('Trở về đâu thế? Đây là trang chủ rồi' );
+}
+var running = setInterval(clockTimer, 1000);
+function clockTimer (){
+	var a = new Date();
+	var b  = new Date();
+	var c  = new Date();
+	var h = document.getElementById("demo3").innerHTML = a.getHours();
+	var m = document.getElementById("demo2").innerHTML = b.getMinutes();
+	var s = document.getElementById("demo1").innerHTML = c.getSeconds();
+       if( h < 10){
+       document.getElementById("demo3").innerHTML = "0" + a.getHours();
+       }
+       if (m < 10) {
+       document.getElementById("demo2").innerHTML = '0' + b.getMinutes();
+       }
+       if (s <10) {
+       document.getElementById("demo1").innerHTML = '0' + c.getSeconds();
+       }
+}
+	</script>
+<link rel="stylesheet" href="src/index.css">
 </head>
 <body>
+<audio autoplay loop>
+	<source>
+</audio>
 <div class="header"> 
-	<img src="../img/4a.png" alt="logo"/>
-	<p> Câu lạc bộ Thể thao điện tử ESC PTIT </p>
+	<img  id="headerImg" src="img/4a.png" alt="logo"/>
+	<div id="headerTitle">
+<button style="float: right;font-family: Cambria, 'Hoefler Text', 'Liberation Serif';width:120px; background-color: skyblue; height: 40px; font-size: 14px;"> 
+	Chủ nhiệm CLB</button>
+	<p> Câu lạc bộ Thể thao điện tử ESC PTIT</p>
+	<p id="ptit"> Học viện Công nghệ Bưu chính Viễn thông</p>
 	</div>
-<main> 
-	<marquee><i>Các bạn đang nghe [House] ★DG812 - 8 Bit</i></marquee>
-	<div><audio autoplay loop>
-	<source src="../audio/intro.mp3" type="audio/mpeg" ></audio>
 	</div>
+<div id="topNav"> 
 	
-	<b> Trang web đang trong quá trình hoàn thiện !!</b>
-	<div> Tiến độ: <progress max="100" value="30"/></div>
-	</main>
-	</body>
+	<button id="news" ><a href="index.html"/><i class="fa fa-align-left" style="font-size:15px"></i> Tin tức CLB</button>
+	<button id="aboutUs"><a href="src/aboutUs.html"/><i class="fa fa-arrow-circle-right" style="font-size:15px"></i> Về chúng tôi</button>
+	<button id="members"> <i class="fa fa-user" style="font-size: 15px"></i> Thành viên CLB</button>
+	<button id="contactMe"><i class="fa fa-commenting"></i> Liên hệ CLB </button>
+    <button id="escGames" disabled> <i class="fa fa-gamepad" style="font-size: 19px"></i> Application </button>
+	<button id="selfie"><em class="fa fa-image"></em> ESC PTIT Gallery</button>
+	<div id="clock4F">
+	<span id="demo3"></span>:
+	<span id="demo2"></span>:
+	<span id="demo1"></span>
+	</div>
+	</div>
+	<div id="marquee"><marquee>
+	  <em> Chúc các bạn nghe nhạc vui vẻ </em>
+	</marquee>
+	</div>
+    <div id="mainInterface">
+		<div id="leftSide75">
+		<div>
+			<p class="menuHead"><i class="fa fa-align-left" style="font-size:15px"></i> Tin tức CLB </p>
+			<p class="return" onClick="notBack()"> <i class="fa fa-backward"></i> Trở về</p>
+			</div>
+<!--			Khung đăng tin tức      -->
+			<div style="margin-top: 90px; margin-left:20px; margin-right: 20px;">
+		         <div style=" height: 25%; color: white; border: dotted white 1px; border-radius: 20px; padding-left: 30px; padding-top: 20px;">
+			<i>Thông báo về Trang thông tin Câu lạc bộ Thể thao điện tử ESC PTIT</i> 
+					 <p style="font-size: 15px;"> Ngày đăng: 29/6/2018</p>
+				</div>
+				<br>
+		<div style=" height: 25%; color: white; border: dotted white 1px; border-radius: 20px; padding-left: 30px; padding-top: 20px;">
+			<i> (Tin Esports) Đội tuyển The First đã xuất sắc đạt vị trí Á Quân tại giải LMHT Sinh viên Toàn Quốc 2018 - mùa 1 </i>
+			          <p style="font-size: 15px;"> Ngày đăng: 4/6/2018 </p>
+				</div>
+			</div>
+
+		</div>
+		<div id="rightSide25">
+		<img src="img/indexRight.png" alt="Soraka Vệ binh tinh tú" id="rightSideImg"/> 
+	</div>
+</div>
+</body>
